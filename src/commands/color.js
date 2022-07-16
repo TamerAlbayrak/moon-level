@@ -25,7 +25,7 @@ module.exports = {
       return message.channel.send(embed.setDescription("Level kartının rengi başarıyla sıfırlandı!"));
     }
 
-    if (args[0].length < 6) return message.channel.error(message, "6 haneli bir renk kodu belirtmelisin!");
+    if (args[0].length < 6) return message.channel.error(message, "6 haneli bir renk kodu belirtmelisin! Bu kodu internet tarayıcınıza **renk seçici** yazıp istediğiniz rengi seçtikten sonra **HEX** yazan yerdeki kodu (# bu işaret olmadan) kopyalayıp yazmanız gerekmektedir.");
     await db.findOneAndUpdate({
       guildID: message.guild.id,
       userID: message.author.id
