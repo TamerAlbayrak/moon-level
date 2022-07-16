@@ -2,9 +2,9 @@
   "name": "level",
   "version": "0.0.1",
   "description": "Level Bot",
-  "main": "theark.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node theark.js"
+    "start": "node main.js"
   },
   "dependencies": {
     "canvas": "^2.6.1",
