@@ -99,7 +99,7 @@ module.exports = {
     ctx.fillText(rank, 930, 158);
 
     ctx.font = "19px Arial";
-    ctx.fillStyle = "#686971";
+    ctx.fillStyle = color;
     ctx.textAlign = "center";
     ctx.fillText(`${userData ? userData.currentXP : 0}/${nextLevelXP}`, 920, 230);
 
