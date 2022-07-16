@@ -60,7 +60,7 @@ module.exports = {
     // texts
     const username = member.user.username.length > 8 ? member.user.username.slice(0, 8).concat("...") : member.user.username;
     ctx.font = "40px Arial";
-    ctx.fillStyle = standardColor;
+    ctx.fillStyle = color;
     ctx.fillText(username, 306, 140);
 
     const correctX = ctx.measureText(username).width;
