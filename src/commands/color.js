@@ -15,7 +15,7 @@ module.exports = {
    */
 
   run: async (client, message, args, embed) => {
-    if (!args[0]) return message.channel.error(message, "Bir renk kodu ya da parametre belirtmelisin!");
+    if (!args[0]) return message.channel.error(message, "Bir renk kodu ya da parametre belirtmelisin! Bu kodu internet tarayıcınıza **renk seçici** yazıp istediğiniz rengi seçtikten sonra **HEX** yazan yerdeki kodu (# bu işaret olmadan) kopyalayıp yazmanız gerekmektedir");
 
     if (["sıfırla", "sil", "reset"].includes(args[0])) {
       const data = await db.findOne({ guildID: message.guild.id, userID: message.author.id });
